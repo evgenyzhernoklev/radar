@@ -1,0 +1,55 @@
+doctype html
+html
+  head
+    meta charset="utf-8"
+    meta http-equiv="X-UA-Compatible" content="IE=edge"
+    meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=0"
+    title Radar
+    meta name="description" content=""
+    link rel="stylesheet" media="all" href="../../css/app.css"
+  body
+    .contentWrapper
+
+      .sidebar
+        span.sidebar__logo.icon.icon--logo
+        nav.sidebar__menu.menu
+          a.menu__link.is-active href="#"
+            | Отклики на вакансии
+            span.menu__quantity +1
+          a.menu__link href="#" Ваши вакансии
+          a.menu__link.is-active href="#"
+            | Диалоги
+            span.menu__quantity +15
+          a.menu__link href="#" Поиск соискателей
+          a.menu__link href="#" Профиль компании
+        a.sidebar__add.linkButton.linkButton--red href="#" Добавить вакансию
+        .sidebar__user.userLogined
+          img.userLogined__avatar src=""
+          p.userLogined__name
+            | Светлана<br/>Константинопольская
+          span.userLogined__exit.icon.icon--logout
+
+      .contentIn
+        h1.titleMain Отклики на вакансии
+
+        .vacanciesList
+          .vacancy
+            .vacancy__in
+              .vacancyInfo
+                img.vacancyInfo__avatar src=""
+                p.vacancyInfo__name Дмитрий Медведев
+                p.vacancyInfo__position
+                  | На вакансию <a class="vacancyInfo__about" href="#">Системный администратор</a>
+                p.vacancyInfo__address
+              .vacancyButtons
+                .vacancyButton
+                  p.vacancyButton__info написать
+                  span.vacancyButton__icon.icon.icon--dialog
+                .vacancyButton
+                  p.vacancyButton__info телефон
+                  span.vacancyButton__icon.icon.icon--phone
+                .vacancyButton.vacancyButton--archive
+                  p.vacancyButton__info в архив
+                  span.vacancyButton__icon.icon.icon--archive
+
+    script src="../../js/app.js"

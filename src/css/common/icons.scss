@@ -5,3 +5,23 @@
 .icon {
   vertical-align: middle;
 }
+
+.icon--logo {
+  @include background-image(logo, 123px, 29px);
+}
+
+.icon--logout {
+  @include background-image(logout, 17px, 20px);
+}
+
+.icon--dialog {
+  @include background-image(dialog, 20px, 20px);
+}
+
+.icon--phone {
+  @include background-image(phone, 18px, 18px);
+}
+
+.icon--archive {
+  @include background-image(archive, 20px, 15px);
+}

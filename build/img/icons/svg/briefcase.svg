@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="20px" height="18px" viewBox="0 0 20 18" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 48.2 (47327) - http://www.bohemiancoding.com/sketch -->
+    <title>responses</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <path d="M8,0 C7.476563,0 6.941406,0.183594 6.5625,0.5625 C6.183594,0.941406 6,1.476563 6,2 L6,3 L2,3 C0.898438,3 0,3.898438 0,5 L0,11 C0,12.101563 0.898438,13 2,13 L18,13 C19.101563,13 20,12.101563 20,11 L20,5 C20,3.898438 19.101563,3 18,3 L14,3 L14,2 C14,1.476563 13.816406,0.941406 13.4375,0.5625 C13.058594,0.183594 12.523438,0 12,0 L8,0 Z M8,2 L12,2 L12,3 L8,3 L8,2 Z M10,9 C10.601563,9 11,9.398438 11,10 C11,10.601563 10.601563,11 10,11 C9.398438,11 9,10.601563 9,10 C9,9.398438 9.398438,9 10,9 Z M0,12 L0,16 C0,17.101563 0.898438,18 2,18 L18,18 C19.101563,18 20,17.101563 20,16 L20,12 C20,13.101563 19.101563,14 18,14 L2,14 C0.898438,14 0,13.101563 0,12 Z" id="responses" fill="#F15F79" fill-rule="nonzero"></path>
+    </g>
+</svg>
