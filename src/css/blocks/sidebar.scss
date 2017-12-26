@@ -5,17 +5,17 @@
   bottom: 0;
   left: 0;
   width: 260px;
-  padding: 35px 0 195px;
-  min-height: 708px;
   background: $white;
   box-shadow: 0 0 25px 0 rgba(0,0,0,0.10);
+  overflow: auto;
 }
 
-// .sidebar__in {
-  // position: relative;
-  // padding: 35px 0 195px;
-  // overflow: auto;
-// }
+.sidebar__in {
+  position: relative;
+  padding: 35px 0 195px;
+  height: 100%;
+  min-height: 708px;
+}
 
 .sidebar__logo {
   margin-left: 40px;
