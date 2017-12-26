@@ -31,17 +31,18 @@ html
             | Отклики на вакансии
             span.menu__quantity +1
           a.menu__link href="#" Ваши вакансии
-          a.menu__link.is-active href="#"
+          a.menu__link href="#"
             | Диалоги
             span.menu__quantity +15
           a.menu__link href="#" Поиск соискателей
           a.menu__link href="#" Профиль компании
-        a.sidebar__add.linkButton.linkButton--red href="#" Добавить вакансию
+        .sidebar__add
+          a.linkButton.linkButton--red href="#" Добавить вакансию
         .sidebar__user.userLogined
-          img.userLogined__avatar src=""
+          img.userLogined__avatar src="../../img/avatars/sexy.png"
           p.userLogined__name
             | Светлана<br/>Константинопольская
-          span.userLogined__exit.icon.icon--logout
+          a.userLogined__exit.icon.icon--logout href="#"
 
       .contentIn
         h1.titleMain Отклики на вакансии

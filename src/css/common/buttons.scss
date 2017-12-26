@@ -1,4 +1,7 @@
 .linkButton {
+  display: inline-block;
+  width: 100%;
+  text-align: center;
   cursor: pointer;
   transition: color $transition-normal, background-color $transition-normal, border-color $transition-normal, opacity $transition-normal;
 
@@ -8,5 +11,18 @@
 
   &[disabled] {
     cursor: default;
+  }
+}
+
+.linkButton--red {
+  height: 45px;
+  font: 12px/47px $roboto-bold;
+  text-transform: uppercase;
+  color: $white;
+  background-color: $red;
+  border-radius: 3px;
+
+  &:hover {
+    background-color: #f37b90;
   }
 }
