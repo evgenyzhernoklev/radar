@@ -3,11 +3,15 @@
 }
 
 .vacancy {
-
+  margin-bottom: 30px;
+  background: $white;
+  box-shadow: 1px 1px 3px 0 rgba(0,0,0,0.10);
+  border-radius: 5px;
 }
 
 .vacancy__in {
-
+  position: relative;
+  padding: 20px 210px 18px 105px;
 }
 
 
@@ -18,11 +22,15 @@
 }
 
 .vacancyInfo__avatar {
-
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  width: 65px;
+  border-radius: 50%;
 }
 
 .vacancyInfo__name {
-
+  font: 18px/24px $roboto-bold;
 }
 
 .vacancyInfo__position {
@@ -30,26 +38,79 @@
 }
 
 .vacancyInfo__about {
+  color: $black;
+  border-bottom: 1px solid $black;
 
+  &:hover {
+    border-bottom-color: transparent;
+  }
 }
 
 .vacancyInfo__address {
-
+  color: #959595;
 }
 
 
 
 // buttons
-.vacancyButton {
+.vacancyButtons {
+  position: absolute;
+  top: 27px;
+  right: 20px;
+}
 
+.vacancyButton {
+  display: inline-block;
+  position: relative;
+  width: 50px;
+  height: 50px;
+  margin-right: 7px;
+  line-height: 50px;
+  text-align: center;
+  background-color: #97B563;
+  cursor: pointer;
+  transition: background-color $transition-normal;
+  border-radius: 50%;
+
+  &:hover {
+    background-color: #B1CE7E;
+
+    .vacancyButton__info {
+      @include show();
+    }
+  }
+
+  &:last-child {
+    margin-right: 0;
+  }
+
+  .icon--dialog {
+    margin-top: 1px;
+  }
+
+  .icon--archive {
+    margin-bottom: 1px;
+  }
 }
 
 .vacancyButton--archive {
+  background-color: #ECECEC;
 
+  &:hover {
+    background-color: $white-light;
+  }
 }
 
 .vacancyButton__info {
-
+  position: absolute;
+  top: -16px;
+  left: 50%;
+  font: 10px/12px $roboto-medium;
+  text-transform: uppercase;
+  color: #959595;
+  white-space: nowrap;
+  transform: translateX(-50%);
+  @include hide();
 }
 
 .vacancyButton__icon {

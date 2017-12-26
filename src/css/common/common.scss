@@ -69,10 +69,11 @@ a {
 
 // common blocks
 .contentWrapper {
-  overflow: hidden;
+
 }
 
 .titleMain {
+  margin: 29px 0 20px;
   font-size: 24px;
   font-family: $roboto-black;
 }
@@ -83,9 +84,10 @@ a {
 
 .contentIn {
   position: relative;
-  width: 764px;
+  max-width: 1180px;
+  min-width: 764px;
   margin-left: 260px;
-  padding: 0 20px;
+  padding: 0 30px;
 }
 
 @media ($mobile) {
