@@ -21,11 +21,50 @@
 
 }
 
-.vacancyInfo__avatar {
+.vacancyInfo__avatarWrapper {
   position: absolute;
   top: 20px;
   left: 20px;
   width: 65px;
+  border-radius: 50%;
+}
+
+.vacancyInfo__avatarWrapper--online {
+  &:before {
+    content: '';
+    position: absolute;
+    left: -5px;
+    bottom: 0;
+    width: 17px;
+    height: 17px;
+    background-color: #89CA46;
+    border: 2px solid $white;
+    border-radius: 50%;
+  }
+}
+
+.vacancyInfo__avatarWrapper--video {
+  top: 17px;
+  width: 71px;
+  height: 71px;
+  border: 3px solid $red;
+
+  &:after {
+    content: '';
+    @include background-image(video, 13px, 7px);
+    position: absolute;
+    left: -5px;
+    top: 1px;
+    width: 21px;
+    height: 21px;
+    background-color: $red;
+    border-radius: 50%;
+  }
+}
+
+.vacancyInfo__avatar {
+  display: block;
+  width: 100%;
   border-radius: 50%;
 }
 

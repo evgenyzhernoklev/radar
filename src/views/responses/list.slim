@@ -52,7 +52,64 @@ html
           .vacancy
             .vacancy__in
               .vacancyInfo
-                img.vacancyInfo__avatar src="../../img/avatars/medvedev.png"
+                .vacancyInfo__avatarWrapper
+                  img.vacancyInfo__avatar src="../../img/avatars/medvedev.png"
+                p.vacancyInfo__name Дмитрий Медведев
+                p.vacancyInfo__position
+                  | На вакансию <a class="vacancyInfo__about" href="#">Системный администратор</a>
+                p.vacancyInfo__address Москва, ул. Барклая, 6, стр. 5
+              .vacancyButtons
+                .vacancyButton
+                  p.vacancyButton__info написать
+                  span.vacancyButton__icon.icon.icon--dialog
+                .vacancyButton
+                  p.vacancyButton__info телефон
+                  span.vacancyButton__icon.icon.icon--phone
+                .vacancyButton.vacancyButton--archive.tooltip-container
+                  p.vacancyButton__info в архив
+                  span.vacancyButton__icon.icon.icon--archive.tooltip-link
+                  .tooltip.tooltip-content
+                    .triangleShadow.triangleShadow--top
+                      span.triangleShadow__helper
+                    .tooltip__in.tooltip__in--vacancy
+                      .tooltipList
+                        a.tooltipList__link.tooltipList__link--ok href="#" Вышел на работу
+                        a.tooltipList__link.tooltipList__link--error href="#" Не подошел
+                        a.tooltipList__link.tooltipList__link--refuse href="#" Отказался
+
+          .vacancy
+            .vacancy__in
+              .vacancyInfo
+                .vacancyInfo__avatarWrapper.vacancyInfo__avatarWrapper--online.vacancyInfo__avatarWrapper--video
+                  img.vacancyInfo__avatar src="../../img/avatars/shoygu.png"
+                p.vacancyInfo__name Сергей Шойгу
+                p.vacancyInfo__position
+                  | На вакансию <a class="vacancyInfo__about" href="#">Бариста</a>
+                p.vacancyInfo__address Санкт-Петербург, ул. Победоносная, 6, стр. 5
+              .vacancyButtons
+                .vacancyButton
+                  p.vacancyButton__info написать
+                  span.vacancyButton__icon.icon.icon--dialog
+                .vacancyButton
+                  p.vacancyButton__info телефон
+                  span.vacancyButton__icon.icon.icon--phone
+                .vacancyButton.vacancyButton--archive.tooltip-container
+                  p.vacancyButton__info в архив
+                  span.vacancyButton__icon.icon.icon--archive.tooltip-link
+                  .tooltip.tooltip-content
+                    .triangleShadow.triangleShadow--top
+                      span.triangleShadow__helper
+                    .tooltip__in.tooltip__in--vacancy
+                      .tooltipList
+                        a.tooltipList__link.tooltipList__link--ok href="#" Вышел на работу
+                        a.tooltipList__link.tooltipList__link--error href="#" Не подошел
+                        a.tooltipList__link.tooltipList__link--refuse href="#" Отказался
+
+          .vacancy
+            .vacancy__in
+              .vacancyInfo
+                .vacancyInfo__avatarWrapper
+                  img.vacancyInfo__avatar src="../../img/avatars/medvedev.png"
                 p.vacancyInfo__name Дмитрий Медведев
                 p.vacancyInfo__position
                   | На вакансию <a class="vacancyInfo__about" href="#">Системный администратор</a>
