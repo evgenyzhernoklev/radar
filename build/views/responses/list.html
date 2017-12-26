@@ -72,11 +72,21 @@
                   </p>
                   <span class="vacancyButton__icon icon icon--phone"></span>
                 </div>
-                <div class="vacancyButton vacancyButton--archive">
+                <div class="vacancyButton vacancyButton--archive tooltip-container">
                   <p class="vacancyButton__info">
                     в архив
                   </p>
-                  <span class="vacancyButton__icon icon icon--archive"></span>
+                  <span class="vacancyButton__icon icon icon--archive tooltip-link"></span>
+                  <div class="tooltip tooltip-content">
+                    <div class="triangleShadow triangleShadow--top">
+                      <span class="triangleShadow__helper"></span>
+                    </div>
+                    <div class="tooltip__in tooltip__in--vacancy">
+                      <div class="tooltipList">
+                        <a class="tooltipList__link tooltipList__link--ok" href="#">Вышел на работу</a><a class="tooltipList__link tooltipList__link--error" href="#">Не подошел</a><a class="tooltipList__link tooltipList__link--refuse" href="#">Отказался</a>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>

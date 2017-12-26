@@ -1,0 +1,49 @@
+.tooltip {
+  display: none;
+  position: absolute;
+  top: 100%;
+  right: -7px;
+  margin-top: 15px;
+  text-align: left;
+}
+
+.tooltip__in {
+  background: $white;
+  box-shadow: 0 0 14px 0 rgba(0,0,0,0.20);
+  border-radius: 3px;
+}
+
+.tooltip__in--vacancy {
+  width: 193px;
+}
+
+.tooltipList {
+
+}
+
+.tooltipList__link {
+  display: block;
+  padding: 14px 18px 13px;
+  font: 14px/20px $roboto-medium;
+  border-bottom: 1px solid #E2E2E2;
+
+  &:last-child {
+    border-bottom: 0;
+  }
+
+  &:hover {
+    background-color: $white-light;
+  }
+}
+
+.tooltipList__link--ok {
+  color: $green;
+}
+
+.tooltipList__link--error {
+  color: #F1A44D;
+}
+
+.tooltipList__link--refuse {
+  color: #9E9E9E;
+}
