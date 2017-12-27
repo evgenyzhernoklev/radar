@@ -1,0 +1,22 @@
+.emptyInfo {
+  display: flex;
+  align-items: center;
+  min-height: 300px;
+  text-align: center;
+}
+
+.emptyInfo__in {
+  flex-basis: 100%;
+  padding: 50px 0;
+}
+
+.emptyInfo__iconWrapper {
+  height: 60px;
+  line-height: 60px;
+  margin-bottom: 22px;
+}
+
+.emptyInfo__text {
+  font-size: 16px;
+  line-height: 23px;
+}

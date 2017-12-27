@@ -19,6 +19,9 @@ Viewer.prototype.initClasses = function () {
   $('.tabs-container').each(function() {
     new Tabs(this);
   });
+  $('.empty-block').each(function() {
+    new EmptyBlock(this);
+  });
 };
 
 Viewer.prototype.initFunctions = function () {

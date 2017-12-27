@@ -10,6 +10,7 @@
  * Custom
  */
 
+//= ./lib/empty-block.js
 //= ./lib/tabs.js
 //= ./lib/tooltip.js
 

@@ -15,6 +15,8 @@ Tabs.prototype.checkActiveContent = function () {
       index = this.links.index($active);
 
   this.content.eq(index).addClass('is-active');
+
+  $(window).trigger('resize'); // to recalculate empty block position
 };
 
 Tabs.prototype.switchContent = function (e) {

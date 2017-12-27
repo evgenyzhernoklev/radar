@@ -29,3 +29,11 @@
 .icon--close {
   @include background-image(cross_close, 17px, 17px);
 }
+
+.icon--persons {
+  @include background-image(persons, 68px, 52px);
+}
+
+.icon--clock {
+  @include background-image(clock, 60px, 60px);
+}
