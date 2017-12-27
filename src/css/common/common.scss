@@ -74,7 +74,8 @@ a {
 
 // common blocks
 .contentWrapper {
-
+  max-width: 1440px;
+  min-width: 1024px;
 }
 
 .titleMain {
@@ -94,8 +95,6 @@ a {
 
 .contentIn {
   position: relative;
-  max-width: 1180px;
-  min-width: 764px;
   margin-left: 260px;
   padding: 0 30px;
 }

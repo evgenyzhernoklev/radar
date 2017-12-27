@@ -153,6 +153,7 @@
 
 
 // labels
+.vacancyInfo__label,
 .vacancyButtons__label {
   display: inline-block;
   margin-top: 12px;
@@ -164,6 +165,7 @@
   border-radius: 15px;
 }
 
+.vacancyInfo__label,
 .vacancyButtons__label--ok {
   background-color: $green;
 }
@@ -174,4 +176,31 @@
 
 .vacancyButtons__label--refuse {
   background-color: #9E9E9E;
+}
+
+.vacancyInfo__label {
+  margin-top: 0;
+  margin-left: 8px;
+}
+
+
+
+// speech
+.vacancySpeech {
+  margin: 22px -190px 2px -85px;
+  padding: 5px 15px;
+  position: relative;
+  font-size: 16px;
+  background-color: #F0FBE8;
+
+  &:before {
+    content: '';
+    display: inline-block;
+    position: absolute;
+    bottom: 100%;
+    left: 25px;
+    border: 7px solid transparent;
+    border-bottom: 7px solid #F0FBE8;
+    border-left: 7px solid #F0FBE8;
+  }
 }
