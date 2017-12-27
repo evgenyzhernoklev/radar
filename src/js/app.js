@@ -10,6 +10,7 @@
  * Custom
  */
 
+//= ./lib/tabs.js
 //= ./lib/tooltip.js
 
 //= ./viewer.js

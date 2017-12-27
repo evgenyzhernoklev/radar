@@ -16,6 +16,9 @@ Viewer.prototype.initClasses = function () {
   if ($('.tooltip-container').length) {
     new Tooltip();
   }
+  $('.tabs-container').each(function() {
+    new Tabs(this);
+  });
 };
 
 Viewer.prototype.initFunctions = function () {
