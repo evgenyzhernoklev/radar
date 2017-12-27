@@ -27,10 +27,12 @@ html
         span.login__logo.icon.icon--logo
 
         .formWrapper
-          form.formWrapper__form.form
+          form.formWrapper__form.form.form--login
             h1.form__title.titleMain Вход в личный кабинет
-
             .formBlock
               label.formLabel
                 span.formLabel__info Ваш номер телефона
                 input.formLabel__field type="text" placeholder="Введите Ваш номер телефона"
+              span.formBlock__error Неверный номер телефона
+            .formButtons
+              button.formButtons__button.linkButton.linkButton--red type="submit" Продолжить

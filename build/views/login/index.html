@@ -25,12 +25,15 @@
       <div class="login">
         <span class="login__logo icon icon--logo"></span>
         <div class="formWrapper">
-          <form class="formWrapper__form form">
+          <form class="formWrapper__form form form--login">
             <h1 class="form__title titleMain">
               Вход в личный кабинет
             </h1>
             <div class="formBlock">
-              <label class="formLabel"><span class="formLabel__info">Ваш номер телефона</span><input class="formLabel__field" placeholder="Введите Ваш номер телефона" type="text" /></label>
+              <label class="formLabel"><span class="formLabel__info">Ваш номер телефона</span><input class="formLabel__field" placeholder="Введите Ваш номер телефона" type="text" /></label><span class="formBlock__error">Неверный номер телефона</span>
+            </div>
+            <div class="formButtons">
+              <button class="formButtons__button linkButton linkButton--red" type="submit">Продолжить</button>
             </div>
           </form>
         </div>
