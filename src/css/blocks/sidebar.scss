@@ -14,7 +14,7 @@
   position: relative;
   padding: 35px 0 195px;
   height: 100%;
-  min-height: 708px;
+  min-height: 681px;
 }
 
 .sidebar__logo {
@@ -30,7 +30,9 @@
 
   .linkButton {
     height: 45px;
+    font-size: 12px;
     line-height: 47px;
+    text-transform: uppercase;
   }
 }
 

@@ -29,10 +29,15 @@ html
         .formWrapper
           form.formWrapper__form.form.form--login
             h1.form__title.titleMain Вход в личный кабинет
+            / .formBlock.has-error
             .formBlock
               label.formLabel
                 span.formLabel__info Ваш номер телефона
-                input.formLabel__field type="text" placeholder="Введите Ваш номер телефона"
+                input.formLabel__field.is-mobile type="text" placeholder="Введите Ваш номер телефона"
               span.formBlock__error Неверный номер телефона
             .formButtons
               button.formButtons__button.linkButton.linkButton--red type="submit" Продолжить
+
+
+
+    script src="../../js/app.js"

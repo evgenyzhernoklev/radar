@@ -1,7 +1,6 @@
 var Viewer = function() {
   this.window = $(window);
   this.body = $('body');
-
   this.init();
 };
 
@@ -22,6 +21,7 @@ Viewer.prototype.initClasses = function () {
   $('.empty-block').each(function() {
     new EmptyBlock(this);
   });
+  new FormFields();
 };
 
 Viewer.prototype.initFunctions = function () {

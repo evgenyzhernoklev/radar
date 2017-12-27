@@ -3,6 +3,8 @@
  */
 
 //= ../../node_modules/jquery/dist/jquery.min.js
+//= ./vendor/bpopup.min.js
+//= ./vendor/jquery.inputmask.bundle.js
 
 
 
@@ -11,6 +13,7 @@
  */
 
 //= ./lib/empty-block.js
+//= ./lib/forms.js
 //= ./lib/tabs.js
 //= ./lib/tooltip.js
 
