@@ -11,5 +11,5 @@ FormFields.prototype.initMasks = function () {
     positionCaretOnTab: 0
   });
 
-  $('.is-mobile').inputmask({"mask": "+7 (999) 999-9999"});
+  $('.is-mobile').inputmask({"mask": "+7 (999) 999-9999", clearIncomplete: true });
 };
