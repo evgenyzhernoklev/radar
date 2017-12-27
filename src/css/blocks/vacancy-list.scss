@@ -149,3 +149,29 @@
   height: 100%;
   border-radius: 50%;
 }
+
+
+
+// labels
+.vacancyButtons__label {
+  display: inline-block;
+  margin-top: 12px;
+  padding: 3px 13px 2px;
+  font: 12px/20px $roboto-medium;
+  text-transform: uppercase;
+  color: $white;
+  white-space: nowrap;
+  border-radius: 15px;
+}
+
+.vacancyButtons__label--ok {
+  background-color: $green;
+}
+
+.vacancyButtons__label--error {
+  background-color: $orange;
+}
+
+.vacancyButtons__label--refuse {
+  background-color: #9E9E9E;
+}
