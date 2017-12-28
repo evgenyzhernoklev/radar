@@ -20,6 +20,8 @@
 
 //= ./viewer.js
 
+//= ./vacancy.js
+
 
 
 $(document).ready(function() {
