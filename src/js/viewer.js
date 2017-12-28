@@ -22,6 +22,7 @@ Viewer.prototype.initClasses = function () {
     new EmptyBlock(this);
   });
   new FormFields();
+  new Popups();
 };
 
 Viewer.prototype.initFunctions = function () {
