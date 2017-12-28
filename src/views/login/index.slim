@@ -39,6 +39,20 @@ html
               button.formButtons__button.linkButton.linkButton--red.popup-open data-popup="popup-confirmation" type="submit" Продолжить
 
     .popup.popup-confirmation
+      .popup__title Подтвердите номер
+      .popup__info Введите СМС-код, который мы выслали на указанный номер
+      form.form.popup__form
+        .cols.form__cols
+          .col--2.form__col
+            .formBlock
+              label.formLabel
+                span.formLabel__info Код из смс
+                input.formLabel__field type="text" placeholder="Введите код"
+          .col--2.form__col
+
+        .formButtons
+          button.formButtons__button.formButtons__button--small.linkButton.linkButton--red type="submit" disabled="disabled" Подтвердить
+          button.formButtons__button.formButtons__button--small.linkButton.linkButton--gray type="reset" Отменить
 
 
 

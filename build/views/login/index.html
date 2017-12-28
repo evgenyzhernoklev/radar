@@ -39,7 +39,27 @@
         </div>
       </div>
     </div>
-    <div class="popup popup-confirmation"></div>
+    <div class="popup popup-confirmation">
+      <div class="popup__title">
+        Подтвердите номер
+      </div>
+      <div class="popup__info">
+        Введите СМС-код, который мы выслали на указанный номер
+      </div>
+      <form class="form popup__form">
+        <div class="cols form__cols">
+          <div class="col--2 form__col">
+            <div class="formBlock">
+              <label class="formLabel"><span class="formLabel__info">Код из смс</span><input class="formLabel__field" placeholder="Введите код" type="text" /></label>
+            </div>
+          </div>
+          <div class="col--2 form__col"></div>
+        </div>
+        <div class="formButtons">
+          <button class="formButtons__button formButtons__button--small linkButton linkButton--red" disabled="disabled" type="submit">Подтвердить</button><button class="formButtons__button formButtons__button--small linkButton linkButton--gray" type="reset">Отменить</button>
+        </div>
+      </form>
+    </div>
     <script src="../../js/app.js"></script>
   </body>
 </html>

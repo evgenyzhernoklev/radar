@@ -1,3 +1,14 @@
+// cols
+.form__cols {
+
+}
+
+.form__col {
+
+}
+
+
+
 .formWrapper {
   width: 496px;
   margin: 0 auto;
@@ -82,4 +93,13 @@
 
 .formButtons__button {
 
+}
+
+.formButtons__button--small {
+  width: 180px;
+  margin-right: 10px;
+
+  &:last-child {
+    margin-right: 0;
+  }
 }

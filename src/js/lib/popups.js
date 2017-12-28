@@ -20,7 +20,7 @@ Popups.prototype.openPopup = function(e) {
   }
 
   this.bPopupOpened = $target.bPopup({
-    opacity: 0.8,
+    opacity: 0.5,
     follow: [true, false],
     closeClass: closeEl,
     onOpen: function() {
