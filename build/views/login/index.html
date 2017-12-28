@@ -24,18 +24,22 @@
     <div class="contentWrapper">
       <div class="login">
         <span class="login__logo icon icon--logo"></span>
-        <div class="formWrapper">
-          <form class="formWrapper__form form form--login">
-            <h1 class="form__title titleMain">
-              Вход в личный кабинет
-            </h1>
-            <div class="formBlock">
-              <label class="formLabel"><span class="formLabel__info">Ваш номер телефона</span><input class="formLabel__field is-mobile" placeholder="Введите Ваш номер телефона" type="text" /></label><span class="formBlock__error">Неверный номер телефона</span>
+        <div class="emptyInfo empty-block">
+          <div class="emptyInfo__in">
+            <div class="formWrapper">
+              <form class="formWrapper__form form form--login">
+                <h1 class="form__title titleMain">
+                  Вход в личный кабинет
+                </h1>
+                <div class="formBlock">
+                  <label class="formLabel"><span class="formLabel__info">Ваш номер телефона</span><input class="formLabel__field is-mobile" placeholder="Введите Ваш номер телефона" type="text" /></label><span class="formBlock__error">Неверный номер телефона</span>
+                </div>
+                <div class="formButtons">
+                  <button class="formButtons__button linkButton linkButton--red popup-open" data-popup="popup-confirmation" type="submit">Продолжить</button>
+                </div>
+              </form>
             </div>
-            <div class="formButtons">
-              <button class="formButtons__button linkButton linkButton--red popup-open" data-popup="popup-confirmation" type="submit">Продолжить</button>
-            </div>
-          </form>
+          </div>
         </div>
       </div>
     </div>
@@ -60,7 +64,7 @@
           </div>
         </div>
         <div class="formButtons">
-          <button class="formButtons__button formButtons__button--small linkButton linkButton--red" disabled="disabled" type="submit">Подтвердить</button><button class="formButtons__button formButtons__button--small linkButton linkButton--gray" type="reset">Отменить</button>
+          <button class="formButtons__button formButtons__button--small linkButton linkButton--red" disabled="disabled" type="submit">Подтвердить</button><button class="formButtons__button formButtons__button--small linkButton linkButton--gray popup-close" type="reset">Отменить</button>
         </div>
       </form>
     </div>

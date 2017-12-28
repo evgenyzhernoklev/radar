@@ -26,17 +26,19 @@ html
       .login
         span.login__logo.icon.icon--logo
 
-        .formWrapper
-          form.formWrapper__form.form.form--login
-            h1.form__title.titleMain Вход в личный кабинет
-            / .formBlock.has-error
-            .formBlock
-              label.formLabel
-                span.formLabel__info Ваш номер телефона
-                input.formLabel__field.is-mobile type="text" placeholder="Введите Ваш номер телефона"
-              span.formBlock__error Неверный номер телефона
-            .formButtons
-              button.formButtons__button.linkButton.linkButton--red.popup-open data-popup="popup-confirmation" type="submit" Продолжить
+        .emptyInfo.empty-block
+          .emptyInfo__in
+            .formWrapper
+              form.formWrapper__form.form.form--login
+                h1.form__title.titleMain Вход в личный кабинет
+                / .formBlock.has-error
+                .formBlock
+                  label.formLabel
+                    span.formLabel__info Ваш номер телефона
+                    input.formLabel__field.is-mobile type="text" placeholder="Введите Ваш номер телефона"
+                  span.formBlock__error Неверный номер телефона
+                .formButtons
+                  button.formButtons__button.linkButton.linkButton--red.popup-open data-popup="popup-confirmation" type="submit" Продолжить
 
     .popup.popup-confirmation
       .popup__title Подтвердите номер
@@ -55,7 +57,7 @@ html
                 a.linkButton.linkButton--send href="#" выслать еще раз
         .formButtons
           button.formButtons__button.formButtons__button--small.linkButton.linkButton--red type="submit" disabled="disabled" Подтвердить
-          button.formButtons__button.formButtons__button--small.linkButton.linkButton--gray type="reset" Отменить
+          button.formButtons__button.formButtons__button--small.linkButton.linkButton--gray.popup-close type="reset" Отменить
 
 
 

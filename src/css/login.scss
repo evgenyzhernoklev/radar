@@ -1,9 +1,12 @@
 .login {
   padding-top: 65px;
   text-align: center;
+
+  .emptyInfo {
+    min-height: 500px;
+  }
 }
 
 .login__logo {
-  margin-bottom: 90px;
   @include background-image(logo, 131px, 31px);
 }
