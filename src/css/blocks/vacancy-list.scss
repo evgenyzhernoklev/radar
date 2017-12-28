@@ -21,6 +21,13 @@
 
 }
 
+.vacancyInfo__date {
+  margin-bottom: 17px;
+  font: 12px/14px $roboto-medium;
+  text-transform: uppercase;
+  color: #959595;
+}
+
 .vacancyInfo__avatarWrapper {
   position: absolute;
   top: 20px;
@@ -202,5 +209,77 @@
     border: 7px solid transparent;
     border-bottom: 7px solid #F0FBE8;
     border-left: 7px solid #F0FBE8;
+  }
+}
+
+
+
+// offer
+.vacancy--offer {
+  .vacancy__in {
+    padding: 17px 375px 18px 20px;
+  }
+}
+
+
+
+// data
+.vacancyData {
+  position: absolute;
+  top: 42px;
+  right: 20px;
+  width: 345px;
+  text-align: center;
+}
+
+.vacancyData__digit {
+  font: 24px/28px $roboto-bold;
+}
+
+.vacancyData__info {
+  font-size: 14px;
+  color: #959595;
+}
+
+
+
+// actions
+.vacancyActions {
+  position: absolute;
+  top: 12px;
+  right: 15px;
+}
+
+.vacancyActions__button {
+  width: 35px;
+  height: 20px;
+  background-color: $white;
+  border: 1px solid #E2E2E2;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: background-image $transition-normal, background-color $transition-normal, border-color $transition-normal;
+
+  &.is-active {
+    width: 35px;
+    height: 20px;
+    background-color: $red;
+    border-color: $red;
+  }
+}
+
+
+
+// closed
+.vacancy--closed {
+  background-color: transparent;
+  border: 1px solid #CECECE;
+  box-shadow: none;
+
+  .vacancy__in {
+    padding: 17px 375px 18px 20px;
+  }
+
+  .vacancyData {
+    justify-content: flex-end;
   }
 }

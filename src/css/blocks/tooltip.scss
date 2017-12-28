@@ -6,6 +6,10 @@
   right: -7px;
   margin-top: 15px;
   text-align: left;
+
+  .vacancy--offer & {
+    right: -15px;
+  }
 }
 
 .tooltip__in {
@@ -26,6 +30,7 @@
   display: block;
   padding: 14px 18px 13px;
   font: 14px/20px $roboto-medium;
+  color: $black;
   border-bottom: 1px solid #E2E2E2;
 
   &:last-child {

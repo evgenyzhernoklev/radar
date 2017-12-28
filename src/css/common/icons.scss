@@ -37,3 +37,11 @@
 .icon--clock {
   @include background-image(clock, 60px, 60px);
 }
+
+.icon--ellipsis {
+  @include background-image(ellipsis_red, 18px, 4px);
+
+  &.is-active {
+    @include background-image(ellipsis_white, 18px, 4px);
+  }
+}

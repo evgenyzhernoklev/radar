@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta content="IE=edge" http-equiv="X-UA-Compatible" />
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=0" name="viewport" />
+    <title>Radar</title>
+    <meta content="" name="description" />
+    <link href="../../img/favicons/favicon-16x16.png" media="all" rel="icon" sizes="16x16" type="image/png" />
+    <link href="../../img/favicons/favicon-32x32.png" media="all" rel="icon" sizes="32x32" type="image/png" />
+    <link href="../../img/favicons/favicon-96x96.png" media="all" rel="icon" sizes="96x96" type="image/png" />
+    <link href="../../img/favicons/apple-touch-icon-57x57.png" media="all" rel="apple-touch-icon" sizes="57x57" type="image/x-icon" />
+    <link href="../../img/favicons/apple-touch-icon-60x60.png" media="all" rel="apple-touch-icon" sizes="60x60" type="image/x-icon" />
+    <link href="../../img/favicons/apple-touch-icon-72x72.png" media="all" rel="apple-touch-icon" sizes="72x72" type="image/x-icon" />
+    <link href="../../img/favicons/apple-touch-icon-76x76.png" media="all" rel="apple-touch-icon" sizes="76x76" type="image/x-icon" />
+    <link href="../../img/favicons/apple-touch-icon-114x114.png" media="all" rel="apple-touch-icon" sizes="114x114" type="image/x-icon" />
+    <link href="../../img/favicons/apple-touch-icon-120x120.png" media="all" rel="apple-touch-icon" sizes="120x120" type="image/x-icon" />
+    <link href="../../img/favicons/apple-touch-icon-144x144.png" media="all" rel="apple-touch-icon" sizes="144x144" type="image/x-icon" />
+    <link href="../../img/favicons/apple-touch-icon-152x152.png" media="all" rel="apple-touch-icon" sizes="152x152" type="image/x-icon" />
+    <link href="../../img/favicons/apple-touch-icon-180x180.png" media="all" rel="apple-touch-icon" sizes="180x180" type="image/x-icon" />
+    <link href="../../css/app.css" media="all" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="contentWrapper">
+      <div class="sidebar">
+        <div class="sidebar__in">
+          <span class="sidebar__logo icon icon--logo"></span>
+          <nav class="sidebar__menu menu">
+            <a class="menu__link" href="#">Отклики на вакансии<span class="menu__quantity">+1</span></a><a class="menu__link is-active" href="#">Ваши вакансии</a><a class="menu__link" href="#">Диалоги<span class="menu__quantity">+15</span></a><a class="menu__link" href="#">Поиск соискателей</a><a class="menu__link" href="#">Профиль компании</a>
+          </nav>
+          <div class="sidebar__add">
+            <a class="linkButton linkButton--red" href="#">Добавить вакансию</a>
+          </div>
+          <div class="sidebar__user userLogined">
+            <img class="userLogined__avatar" src="../../img/avatars/sexy.png" />
+            <p class="userLogined__name">
+              Светлана<br/>Константинопольская
+            </p>
+            <a class="userLogined__exit icon icon--logout" href="#"></a>
+          </div>
+        </div>
+      </div>
+      <div class="contentIn tabs-container">
+        <h1 class="titleMain titleMain--padding">
+          Ваши вакансии
+        </h1>
+        <div class="tabsLinks">
+          <a class="tabsLinks__link tab-link is-active">Активные</a><a class="tabsLinks__link tab-link">Закрытые</a>
+        </div>
+        <div class="vacanciesList tab-content">
+          <div class="vacancy vacancy--offer">
+            <div class="vacancy__in">
+              <div class="vacancyActions tooltip-container">
+                <span class="vacancyActions__button icon icon--ellipsis tooltip-link"></span>
+                <div class="tooltip tooltip-content">
+                  <div class="triangleShadow triangleShadow--top">
+                    <span class="triangleShadow__helper"></span>
+                  </div>
+                  <div class="tooltip__in tooltip__in--vacancy">
+                    <div class="tooltipList">
+                      <a class="tooltipList__link" href="#">Редактировать</a><a class="tooltipList__link" href="#">Закрыть</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="vacancyInfo">
+                <p class="vacancyInfo__date">
+                  открыта 22 ноября, 19:30
+                </p>
+                <p class="vacancyInfo__name">
+                  Официант
+                </p>
+                <p class="vacancyInfo__position">
+                  от 15 000 &#8381; до 100 000 &#8381; в месяц
+                </p>
+                <p class="vacancyInfo__address">
+                  Москва, ул. Академика Королева, 12, стр. 5
+                </p>
+              </div>
+              <div class="vacancyData colsFlex">
+                <div class="colFlex--3">
+                  <p class="vacancyData__digit">
+                    5
+                  </p>
+                  <p class="vacancyData__info">
+                    откликов
+                  </p>
+                </div>
+                <div class="colFlex--3">
+                  <p class="vacancyData__digit">
+                    25
+                  </p>
+                  <p class="vacancyData__info">
+                    просмотров
+                  </p>
+                </div>
+                <div class="colFlex--3">
+                  <p class="vacancyData__digit">
+                    10
+                  </p>
+                  <p class="vacancyData__info">
+                    за сегодня
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="vacanciesList tab-content">
+          <div class="vacancy vacancy--closed">
+            <div class="vacancy__in">
+              <div class="vacancyInfo">
+                <p class="vacancyInfo__date">
+                  Закрыта 22 ноября, 19:30
+                </p>
+                <p class="vacancyInfo__name">
+                  Официант
+                </p>
+                <p class="vacancyInfo__position">
+                  от 15 000 &#8381; до 100 000 &#8381; в месяц
+                </p>
+                <p class="vacancyInfo__address">
+                  Москва, ул. Академика Королева, 12, стр. 5
+                </p>
+              </div>
+              <div class="vacancyData colsFlex">
+                <div class="colFlex--3">
+                  <p class="vacancyData__digit">
+                    5
+                  </p>
+                  <p class="vacancyData__info">
+                    откликов
+                  </p>
+                </div>
+                <div class="colFlex--3">
+                  <p class="vacancyData__digit">
+                    25
+                  </p>
+                  <p class="vacancyData__info">
+                    просмотров
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="../../js/app.js"></script>
+  </body>
+</html>
