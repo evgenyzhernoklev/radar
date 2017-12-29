@@ -51,12 +51,11 @@
                 Представитель
               </h2>
               <form class="profile__form form">
-                <div class="profile__header"></div>
                 <div class="formBlock">
-                  <label class="formLabel"><span class="formLabel__info">Ваше имя</span><input class="formLabel__field" placeholder="Светлана" type="text" /></label>
+                  <label class="formLabel"><span class="formLabel__info">Ваше имя</span><input class="formLabel__field" placeholder="Укажите имя" type="text" value="Светлана" /></label>
                 </div>
                 <div class="formBlock">
-                  <label class="formLabel"><span class="formLabel__info">Ваша фамилия</span><input class="formLabel__field" placeholder="Константинопольская" type="text" /></label>
+                  <label class="formLabel"><span class="formLabel__info">Ваша фамилия</span><input class="formLabel__field" placeholder="Укажите фамилию" type="text" value="Константинопольская" /></label>
                 </div>
                 <div class="formButtons">
                   <button class="formButtons__button linkButton linkButton--red" type="submit">Сохранить</button>
@@ -70,12 +69,21 @@
                 О компании
               </h2>
               <form class="profile__form form">
-                <div class="profile__header profile__header--company"></div>
                 <div class="formBlock">
-                  <label class="formLabel"><span class="formLabel__info">Название компании</span><input class="formLabel__field" placeholder="Бонго" type="text" /></label>
+                  <label class="formLabel formLabel--image formLabel--cover"><span class="formLabel__label">изменить фото</span><span class="icon icon--add"></span>
+                    <p class="formLabel__coverTitle">
+                      добавить фото обложки
+                    </p>
+                    <p class="formLabel__coverInfo">
+                      Это может быть фото офиса, рабочего места или команды
+                    </p>
+                    <input class="formLabel__field field-image" type="file" /></label>
                 </div>
                 <div class="formBlock">
-                  <label class="formLabel"><span class="formLabel__info">Местоположение</span><input class="formLabel__field" placeholder="Москва, ул. Академика Королева, 12" type="text" /></label>
+                  <label class="formLabel"><span class="formLabel__info">Название компании</span><input class="formLabel__field" placeholder="Укажите название компании" type="text" value="Бонго" /></label>
+                </div>
+                <div class="formBlock">
+                  <label class="formLabel"><span class="formLabel__info">Местоположение</span><input class="formLabel__field" placeholder="Укажите адрес компании" type="text" value="Москва, ул. Академика Королева, 12" /></label>
                 </div>
                 <div class="formButtons">
                   <button class="formButtons__button linkButton linkButton--red" type="submit">Сохранить</button>

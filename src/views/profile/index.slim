@@ -53,16 +53,15 @@ html
             .profile__in
               h2.profile__title Представитель
               form.profile__form.form
-                .profile__header
 
                 .formBlock
                   label.formLabel
                     span.formLabel__info Ваше имя
-                    input.formLabel__field type="text" placeholder="Светлана"
+                    input.formLabel__field type="text" placeholder="Укажите имя" value="Светлана"
                 .formBlock
                   label.formLabel
                     span.formLabel__info Ваша фамилия
-                    input.formLabel__field type="text" placeholder="Константинопольская"
+                    input.formLabel__field type="text" placeholder="Укажите фамилию" value="Константинопольская"
                 .formButtons
                   button.formButtons__button.linkButton.linkButton--red type="submit" Сохранить
 
@@ -70,16 +69,23 @@ html
             .profile__in
               h2.profile__title О компании
               form.profile__form.form
-                .profile__header.profile__header--company
+
+                .formBlock
+                  label.formLabel.formLabel--image.formLabel--cover
+                    span.formLabel__label изменить фото
+                    span.icon.icon--add
+                    p.formLabel__coverTitle добавить фото обложки
+                    p.formLabel__coverInfo Это может быть фото офиса, рабочего места или команды
+                    input.formLabel__field.field-image type="file"
 
                 .formBlock
                   label.formLabel
                     span.formLabel__info Название компании
-                    input.formLabel__field type="text" placeholder="Бонго"
+                    input.formLabel__field type="text" placeholder="Укажите название компании" value="Бонго"
                 .formBlock
                   label.formLabel
                     span.formLabel__info Местоположение
-                    input.formLabel__field type="text" placeholder="Москва, ул. Академика Королева, 12"
+                    input.formLabel__field type="text" placeholder="Укажите адрес компании" value="Москва, ул. Академика Королева, 12"
                 .formButtons
                   button.formButtons__button.linkButton.linkButton--red type="submit" Сохранить
 

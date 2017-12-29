@@ -53,3 +53,7 @@
     @include background-image(ellipsis_white, 18px, 4px);
   }
 }
+
+.icon--add {
+  @include background-image(add, 20px, 20px);
+}
