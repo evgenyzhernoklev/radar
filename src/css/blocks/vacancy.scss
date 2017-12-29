@@ -4,8 +4,10 @@
   top: 0;
   bottom: 0;
   right: -470px;
+  padding-bottom: 30px;
   background-color: $white;
   width: 470px;
+  overflow: auto;
   transition: right $transition-normal;
 
   &.is-active {
@@ -17,19 +19,70 @@
 
 // header
 .vacancyAboutHeader {
+  position: relative;
+  padding: 42px 20px;
+  text-align: center;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
 
+.vacancyAboutHeader__overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0,0,0, 0.5);
 }
 
 .vacancyAboutHeader__close {
-
+  position: absolute;
+  top: 3px;
+  right: 10px;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
 }
 
 .vacancyAboutHeader__time {
-
+  position: relative;
+  margin-bottom: 2px;
+  font-size: 10px;
+  font-family: $roboto-bold;
+  text-transform: uppercase;
+  color: $white;
 }
 
 .vacancyAboutHeader__title {
+  position: relative;
+  font: 18px/26px $roboto-black;
+  color: $white;
+}
 
+
+
+// stats
+.vacancyStats {
+  padding: 16px 0;
+  text-align: center;
+}
+
+.vacancyStats__col {
+  border-right: 1px solid #E2E2E2;
+
+  &:last-child {
+    border-right: 0;
+  }
+}
+
+.vacancyStats__quantity {
+  font: 24px/30px $roboto-bold;
+}
+
+.vacancyStats__info {
+  font-size: 12px;
+  color: #959595;
 }
 
 
@@ -68,6 +121,19 @@
   text-transform: uppercase;
   border: 1px solid #DCDCDC;
   border-radius: 15px;
+}
+
+.vacancyContent__buttons {
+  margin-top: 20px;
+  margin-right: -10px;
+
+  .col--2 {
+    padding-right: 10px;
+  }
+}
+
+.vacancyContent__button {
+  font-size: 14px;
 }
 
 
@@ -120,6 +186,12 @@
   border: 1px solid #E7E9EC;
   border-right: 0;
 
+  &:before {
+    content: '';
+    margin-right: 15px;
+    vertical-align: middle;
+  }
+
   &:first-child {
     border-radius: 3px 0 0 3px;
   }
@@ -135,9 +207,15 @@
 }
 
 .socialCols__link--fb {
-
+  &:before {
+    margin-bottom: 3px;
+    @include background-image(facebook, 11px, 19px);
+  }
 }
 
 .socialCols__link--vk {
-
+  &:before {
+    margin-bottom: 3px;
+    @include background-image(vk, 19px, 11px);
+  }
 }

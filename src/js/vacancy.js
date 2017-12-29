@@ -18,10 +18,10 @@ $(document).ready(function() {
 
 
 
-  $overlay.on('click', function(e) {
+  $('.vacancy-close').on('click', function(e) {
     e.preventDefault();
 
-    $(this).removeClass('is-active');
+    $overlay.removeClass('is-active');
     $vacanciesInfo.removeClass('is-active');
   });
 });

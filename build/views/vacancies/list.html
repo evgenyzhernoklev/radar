@@ -22,16 +22,43 @@
   </head>
   <body>
     <div class="contentWrapper">
-      <div class="contentWrapper__overlay"></div>
-      <div class="vacancyAbout vacancy-info" data-vacancy="waiter">
-        <div class="vacancyAboutHeader">
-          <span class="vacancyAboutHeader__close icon icon--closeWhite"></span>
+      <div class="contentWrapper__overlay vacancy-close"></div>
+      <div class="vacancyAbout vacancy-info" data-vacancy="admin">
+        <div class="vacancyAboutHeader" style="background-image: url(&#39;../../img/vacancy_admin.jpg&#39;);">
+          <div class="vacancyAboutHeader__overlay"></div>
+          <span class="vacancyAboutHeader__close icon icon--closeWhite vacancy-close"></span>
           <p class="vacancyAboutHeader__time">
             Размещено только что
           </p>
           <p class="vacancyAboutHeader__title">
             Центр Инновационных Технологий
           </p>
+        </div>
+        <div class="vacancyStats colsFlex">
+          <div class="colFlex--3 vacancyStats__col">
+            <div class="vacancyStats__quantity">
+              18
+            </div>
+            <div class="vacancyStats__info">
+              откликов
+            </div>
+          </div>
+          <div class="colFlex--3 vacancyStats__col">
+            <div class="vacancyStats__quantity">
+              98
+            </div>
+            <div class="vacancyStats__info">
+              просмотров
+            </div>
+          </div>
+          <div class="colFlex--3 vacancyStats__col">
+            <div class="vacancyStats__quantity">
+              32
+            </div>
+            <div class="vacancyStats__info">
+              за сегодня
+            </div>
+          </div>
         </div>
         <div class="vacancyContent">
           <p class="vacancyContent__position">
@@ -46,6 +73,14 @@
           <p class="vacancyContent__experience">
             <span class="vacancyContent__label">без опыта работы</span>
           </p>
+          <div class="vacancyContent__buttons cols">
+            <div class="col--2">
+              <a class="vacancyContent__button linkButton linkButton--green" href="#">Редактировать</a>
+            </div>
+            <div class="col--2">
+              <a class="vacancyContent__button linkButton linkButton--gray" href="#">Закрыть</a>
+            </div>
+          </div>
         </div>
         <div class="vacancyFooter">
           <p class="vacancyFooter__title">
@@ -89,7 +124,7 @@
           <a class="tabsLinks__link tab-link is-active">Активные</a><a class="tabsLinks__link tab-link">Закрытые</a>
         </div>
         <div class="vacanciesList tab-content">
-          <div class="vacancy vacancy--offer vacancy-show" data-vacancy="waiter">
+          <div class="vacancy vacancy--offer vacancy-show" data-vacancy="admin">
             <div class="vacancy__in">
               <div class="vacancyActions tooltip-container">
                 <span class="vacancyActions__button icon icon--ellipsis tooltip-link"></span>

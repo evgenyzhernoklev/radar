@@ -36,6 +36,15 @@
   }
 }
 
+.linkButton--green {
+  color: $white;
+  background-color: #97B563;
+
+  &:hover {
+    background-color: #a5c56f;
+  }
+}
+
 .linkButton--send {
   font-size: 12px;
   color: $black;
