@@ -16,8 +16,6 @@
 @import "forms/common.scss";
 @import "forms/checkbox.scss";
 
-
-
 // blocks
 @import "blocks/cols-flex.scss";
 @import "blocks/cols.scss";
@@ -32,4 +30,5 @@
 @import "blocks/vacancy.scss";
 
 // pages
-@import "login.scss";
+@import "pages/login.scss";
+@import "pages/profile.scss";
