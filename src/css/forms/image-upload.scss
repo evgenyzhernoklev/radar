@@ -4,10 +4,55 @@
   height: 148px;
   text-align: center;
   cursor: pointer;
+  overflow: hidden;
 
   .formLabel__field {
     display: none;
   }
+}
+
+
+
+// avatar
+.formLabel--avatar {
+  width: 120px;
+  margin-left: auto;
+  margin-right: auto;
+
+  &.with-image {
+    .icon {
+      display: none;
+    }
+
+    .formLabel__avatarImg {
+      display: inline-block;
+    }
+  }
+}
+
+.formLabel__avatar {
+  margin: 18px auto;
+  width: 96px;
+  height: 96px;
+  text-align: center;
+  line-height: 96px;
+  background-color: #F8F8F8;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.formLabel__avatarInfo {
+  font: 12px/18px $roboto-bold;
+  text-transform: uppercase;
+  color: $red;
+  white-space: nowrap;
+}
+
+.formLabel__avatarImg {
+  display: none;
+  max-width: 100%;
+  max-height: 100%;
+  vertical-align: middle;
 }
 
 

@@ -53,7 +53,12 @@ html
             .profile__in
               h2.profile__title Представитель
               form.profile__form.form
-
+                label.formLabel.formLabel--image.formLabel--avatar
+                  .formLabel__avatar
+                    span.icon.icon--photocamera
+                    img.formLabel__avatarImg src=""
+                  span.formLabel__avatarInfo загрузить фото
+                  input.formLabel__field.field-avatar type="file"
                 .formBlock
                   label.formLabel
                     span.formLabel__info Ваше имя
@@ -69,7 +74,6 @@ html
             .profile__in
               h2.profile__title О компании
               form.profile__form.form
-
                 .formBlock
                   label.formLabel.formLabel--image.formLabel--cover
                     span.formLabel__label изменить фото
@@ -77,7 +81,6 @@ html
                     p.formLabel__coverTitle добавить фото обложки
                     p.formLabel__coverInfo Это может быть фото офиса, рабочего места или команды
                     input.formLabel__field.field-image type="file"
-
                 .formBlock
                   label.formLabel
                     span.formLabel__info Название компании

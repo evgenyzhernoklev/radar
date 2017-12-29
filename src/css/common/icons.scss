@@ -57,3 +57,7 @@
 .icon--add {
   @include background-image(add, 20px, 20px);
 }
+
+.icon--photocamera {
+  @include background-image(photocamera, 36px, 32px);
+}
