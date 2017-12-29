@@ -61,6 +61,31 @@ html
             a.socialCols__link.socialCols__link--fb.colFlex--2 href="#" Фейсбук
             a.socialCols__link.socialCols__link--vk.colFlex--2 href="#" Вконтакте
 
+      .vacancyAbout.vacancyAbout--closed.vacancy-info data-vacancy="admin-closed"
+        .vacancyAboutHeader style="background-image: url('../../img/vacancy_admin.jpg');"
+          .vacancyAboutHeader__overlay
+          span.vacancyAboutHeader__close.icon.icon--closeWhite.vacancy-close
+          p.vacancyAboutHeader__time Размещено только что
+          p.vacancyAboutHeader__title Центр Инновационных Технологий
+        .vacancyAttention вакансия закрыта
+        .vacancyStats.colsFlex
+          .colFlex--2.vacancyStats__col
+            .vacancyStats__quantity 18
+            .vacancyStats__info откликов
+          .colFlex--2.vacancyStats__col
+            .vacancyStats__quantity 98
+            .vacancyStats__info просмотров
+        .vacancyContent
+          p.vacancyContent__position Системный администратор
+          p.vacancyContent__salary от 10 000 &#8381; до 60 000 &#8381; в месяц
+          p.vacancyContent__description В пивные рестораны "Золотая вобла" м. Марксистская приглашаются бармены с опытом работы от 0,5 года. График работы сменный с 10.00 до 23.00.
+          p.vacancyContent__experience
+            span.vacancyContent__label без опыта работы
+        .vacancyFooter
+          p.vacancyFooter__title местоположение
+          p.vacancyFooter__address Санкт-Петербург, ул. Академика Павлова, 12
+          .vacancyFooter__map.vacancy-map data-address="Санкт-Петербург, ул. Академика Павлова, 12"
+
       .sidebar
         .sidebar__in
           span.sidebar__logo.icon.icon--logo
@@ -119,7 +144,7 @@ html
                   p.vacancyData__info за сегодня
 
         .vacanciesList.tab-content
-          .vacancy.vacancy--closed
+          .vacancy.vacancy--closed.vacancy-show data-vacancy="admin-closed"
             .vacancy__in
               .vacancyInfo
                 p.vacancyInfo__date Закрыта 22 ноября, 19:30

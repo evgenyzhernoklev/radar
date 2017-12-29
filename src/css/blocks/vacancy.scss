@@ -161,7 +161,7 @@
 // map
 .vacancyFooter__map {
   height: 130px;
-  margin-bottom: 33px;
+  margin-bottom: 30px;
   border-radius: 5px;
   overflow: hidden;
 }
@@ -218,4 +218,26 @@
     margin-bottom: 3px;
     @include background-image(vk, 19px, 11px);
   }
+}
+
+
+
+// closed vacancy
+.vacancyAbout--closed {
+  padding-bottom: 0;
+  color: #959595;
+
+  .vacancyContent__salary,
+  .vacancyFooter__title {
+    color: #959595;
+  }
+}
+
+.vacancyAttention {
+  padding: 8px 20px 7px;
+  font: 12px/18px $roboto-medium;
+  text-align: center;
+  text-transform: uppercase;
+  color: $black;
+  background-color: #EFEFEF;
 }
