@@ -10,7 +10,6 @@ var Vacancies = function () {
 Vacancies.prototype.init = function () {
   this.showLink.on('click', this.showVacancy.bind(this));
   this.hideLink.on('click', this.hideVacancy.bind(this));
-
   this.vacanciesInfo.on('click', function(e) {
     e.stopPropagation();
   });
@@ -22,10 +21,7 @@ Vacancies.prototype.showVacancy = function (e) {
 
   $targetVacancy.addClass('is-active');
   this.bodyOverlay.addClass('is-active');
-
   this.initMap($targetVacancy);
-
-  console.log('show vacancy');
 };
 
 Vacancies.prototype.hideVacancy = function (e) {
