@@ -10,21 +10,22 @@ var Vacancies = function () {
 Vacancies.prototype.init = function () {
   this.showLink.on('click', this.showVacancy.bind(this));
   this.hideLink.on('click', this.hideVacancy.bind(this));
+
+  this.vacanciesInfo.on('click', function(e) {
+    e.stopPropagation();
+  });
 };
 
 Vacancies.prototype.showVacancy = function (e) {
   e.preventDefault();
-
-  var $target = $(e.target).closest('.vacancy-show'),
-      targetData = $target.data('vacancy'),
-      $targetVacancy = this.vacanciesInfo.filter(function() {
-        return $(this).data('vacancy') == targetData;
-      });
+  var $targetVacancy = $(e.target).closest('.vacancy-show').find('.vacancy-info');
 
   $targetVacancy.addClass('is-active');
   this.bodyOverlay.addClass('is-active');
 
   this.initMap($targetVacancy);
+
+  console.log('show vacancy');
 };
 
 Vacancies.prototype.hideVacancy = function (e) {
