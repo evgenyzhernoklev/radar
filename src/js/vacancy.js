@@ -1,9 +1,13 @@
 var Vacancies = function () {
   this.showLink = $('.vacancy-show');
   this.hideLink = $('.vacancy-close');
+  this.addVacancyLink = $('.vacancy-add');
+
+  this.addVacancyContainer = $('.vacancyAdd');
   this.vacanciesInfo = $('.vacancy-info');
   this.vacancyMap = $('.vacancy-map');
   this.bodyOverlay = $('.contentWrapper__overlay');
+
   this.init();
 };
 
@@ -13,6 +17,7 @@ Vacancies.prototype.init = function () {
   this.vacanciesInfo.on('click', function(e) {
     e.stopPropagation();
   });
+  this.addVacancyLink.on('click', this.addVacancy.bind(this));
 };
 
 Vacancies.prototype.showVacancy = function (e) {
@@ -66,4 +71,11 @@ Vacancies.prototype.initMap = function ($targetVacancy) {
       }
     );
   }
+};
+
+Vacancies.prototype.addVacancy = function (e) {
+  e.preventDefault();
+
+  this.bodyOverlay.addClass('is-active');
+  this.addVacancyContainer.addClass('is-active');
 };

@@ -34,6 +34,10 @@
   @include background-image(cross_white, 17px, 16px);
 }
 
+.icon--closeThin {
+  @include background-image(cross_black, 17px, 16px);
+}
+
 .icon--persons {
   @include background-image(persons, 68px, 52px);
 }

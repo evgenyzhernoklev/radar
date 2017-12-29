@@ -241,3 +241,48 @@
   color: $black;
   background-color: #EFEFEF;
 }
+
+
+
+// add vacancy
+.vacancyAdd {
+  position: fixed;
+  z-index: 101;
+  top: 0;
+  bottom: 0;
+  right: -565px;
+  padding: 0 30px 30px;
+  background-color: $white;
+  width: 565px;
+  overflow: auto;
+  transition: right $transition-normal;
+
+  &.is-active {
+    right: 0;
+  }
+}
+
+.vacancyAdd__close {
+  position: absolute;
+  top: 27px;
+  right: 23px;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+}
+
+.vacancyAdd__title {
+  margin-bottom: 27px;
+}
+
+
+
+// new vacancy
+.vacancy--new {
+  border: 2px solid #94CF5D;
+  box-shadow: none;
+
+  .vacancy__in {
+    padding: 15px 373px 16px 18px;
+  }
+}

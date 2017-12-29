@@ -1,0 +1,26 @@
+.formLabel__checkInfo {
+  position: relative;
+  margin-top: 10px;
+  padding-top: 2px;
+  padding-left: 38px;
+  min-height: 25px;
+  cursor: pointer;
+}
+
+.formLabel__checkIcon {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  background-color: $white;
+  border: 1px solid #D5D5D5;
+  border-radius: 3px;
+  transition: background-image $transition-normal, background-color $transition-normal, border-color $transition-normal;
+
+  .formLabel__field:checked + .formLabel__checkInfo & {
+    background: $red url('../img/icons/svg/ok_checkbox.svg') no-repeat center center;
+    border-color: $red;
+  }
+}

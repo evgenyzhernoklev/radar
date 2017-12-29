@@ -25,6 +25,27 @@ html
     .contentWrapper
       .contentWrapper__overlay.vacancy-close
 
+      .vacancyAdd
+        span.vacancyAdd__close.icon.icon--closeThin
+        h3.vacancyAdd__title.titleMain Добавление вакансии
+
+        form.form
+          .formBlock
+            label.formLabel
+              span.formLabel__info Текст вакансии
+              textarea.formLabel__field placeholder="Например: нужен официант, работа посменная, оплата почасовая, можно без опыта работы."
+          .formBlock
+            label.formLabel
+              span.formLabel__info Местоположение
+              input.formLabel__field type="text" placeholder="Например: Москва, ул. Тверская, д. 6"
+          .formBlock
+            label.formLabel
+              span.formLabel__info Опыт работы
+              input.formLabel__field type="checkbox"
+              p.formLabel__checkInfo
+                | Опыт работы для данной вакансии не требуется
+                span.formLabel__checkIcon
+
       .sidebar
         .sidebar__in
           span.sidebar__logo.icon.icon--logo
@@ -39,7 +60,7 @@ html
             a.menu__link href="#" Поиск соискателей
             a.menu__link href="#" Профиль компании
           .sidebar__add
-            a.linkButton.linkButton--red href="#" Добавить вакансию
+            a.linkButton.linkButton--red.vacancy-add href="#" Добавить вакансию
           .sidebar__user.userLogined
             img.userLogined__avatar src="../../img/avatars/sexy.png"
             p.userLogined__name
@@ -56,6 +77,70 @@ html
           a.tabsLinks__link.tab-link Закрытые
 
         .vacanciesList.tab-content
+          .vacancy.vacancy--offer.vacancy--new.vacancy-show
+            .vacancy__in
+              .vacancyActions.tooltip-container
+                span.vacancyActions__button.icon.icon--ellipsis.tooltip-link
+                .tooltip.tooltip-content
+                  .triangleShadow.triangleShadow--top
+                    span.triangleShadow__helper
+                  .tooltip__in.tooltip__in--vacancy
+                    .tooltipList
+                      a.tooltipList__link href="#" Редактировать
+                      a.tooltipList__link href="#" Закрыть
+              .vacancyInfo
+                p.vacancyInfo__date открыта только что
+                p.vacancyInfo__name Официант
+                p.vacancyInfo__position
+                  | от 15 000 &#8381; до 100 000 &#8381; в месяц
+                p.vacancyInfo__address Москва, ул. Академика Королева, 12, стр. 5
+              .vacancyData.colsFlex
+                .colFlex--3
+                  p.vacancyData__digit 5
+                  p.vacancyData__info откликов
+                .colFlex--3
+                  p.vacancyData__digit 25
+                  p.vacancyData__info просмотров
+                .colFlex--3
+                  p.vacancyData__digit 10
+                  p.vacancyData__info за сегодня
+
+            .vacancyAbout.vacancy-info
+              .vacancyAboutHeader style="background-image: url('../../img/vacancy_admin.jpg');"
+                .vacancyAboutHeader__overlay
+                span.vacancyAboutHeader__close.icon.icon--closeWhite.vacancy-close
+                p.vacancyAboutHeader__time Размещено только что
+                p.vacancyAboutHeader__title Центр Инновационных Технологий
+              .vacancyStats.colsFlex
+                .colFlex--3.vacancyStats__col
+                  .vacancyStats__quantity 18
+                  .vacancyStats__info откликов
+                .colFlex--3.vacancyStats__col
+                  .vacancyStats__quantity 98
+                  .vacancyStats__info просмотров
+                .colFlex--3.vacancyStats__col
+                  .vacancyStats__quantity 32
+                  .vacancyStats__info за сегодня
+              .vacancyContent
+                p.vacancyContent__position Системный администратор
+                p.vacancyContent__salary от 10 000 &#8381; до 60 000 &#8381; в месяц
+                p.vacancyContent__description В пивные рестораны "Золотая вобла" м. Марксистская приглашаются бармены с опытом работы от 0,5 года. График работы сменный с 10.00 до 23.00.
+                p.vacancyContent__experience
+                  span.vacancyContent__label без опыта работы
+                .vacancyContent__buttons.cols
+                  .col--2
+                    a.vacancyContent__button.linkButton.linkButton--green href="#" Редактировать
+                  .col--2
+                    a.vacancyContent__button.linkButton.linkButton--gray href="#" Закрыть
+              .vacancyFooter
+                p.vacancyFooter__title местоположение
+                p.vacancyFooter__address Санкт-Петербург, ул. Академика Павлова, 12
+                .vacancyFooter__map.vacancy-map data-address="Санкт-Петербург, ул. Академика Павлова, 12"
+                p.vacancyFooter__title поделиться в соцсетях
+                .vacancyFooter__social.socialCols.colsFlex
+                  a.socialCols__link.socialCols__link--fb.colFlex--2 href="#" Фейсбук
+                  a.socialCols__link.socialCols__link--vk.colFlex--2 href="#" Вконтакте
+
           .vacancy.vacancy--offer.vacancy-show
             .vacancy__in
               .vacancyActions.tooltip-container
