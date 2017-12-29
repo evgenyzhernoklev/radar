@@ -54,8 +54,8 @@ html
               a.vacancyContent__button.linkButton.linkButton--gray href="#" Закрыть
         .vacancyFooter
           p.vacancyFooter__title местоположение
-          p.vacancyFooter__address Санкт-Петербург, ул. Академика Павлова, 12/33
-          .vacancyFooter__map
+          p.vacancyFooter__address Санкт-Петербург, ул. Академика Павлова, 12
+          #map.vacancyFooter__map data-address="Санкт-Петербург, ул. Академика Павлова, 12"
           p.vacancyFooter__title поделиться в соцсетях
           .vacancyFooter__social.socialCols.colsFlex
             a.socialCols__link.socialCols__link--fb.colFlex--2 href="#" Фейсбук
@@ -137,4 +137,5 @@ html
 
 
 
+    script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU"
     script src="../../js/app.js"
