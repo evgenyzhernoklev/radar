@@ -23,6 +23,7 @@ Viewer.prototype.initClasses = function () {
   });
   new FormFields();
   new Popups();
+  new Vacancies();
 };
 
 Viewer.prototype.initFunctions = function () {

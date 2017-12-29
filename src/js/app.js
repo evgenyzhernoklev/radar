@@ -18,9 +18,9 @@
 //= ./lib/tabs.js
 //= ./lib/tooltip.js
 
-//= ./viewer.js
-
 //= ./vacancy.js
+
+//= ./viewer.js
 
 
 
