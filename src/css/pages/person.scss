@@ -1,0 +1,52 @@
+.person {
+  background-color: $white;
+  border-radius: 5px;
+}
+
+
+
+// bio
+.personBio {
+  flex-basis: 300px;
+  padding: 38px 30px 30px;
+  border-right: 1px solid #E2E2E2;
+}
+
+.personBio__avatar {
+  display: block;
+  max-width: 150px;
+  margin: 0 auto 26px;
+  border-radius: 50%;
+}
+
+.personBio__name {
+  font-size: 22px;
+  font-family: $roboto-black;
+  text-align: center;
+}
+
+.personBio__OnlineStatus {
+  font-size: 14px;
+  font-family: $roboto-bold;
+  text-align: center;
+}
+
+.personBio__OnlineStatus--online {
+  &:before {
+    content: '';
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    margin-right: 5px;
+    background-color: #6CDD57;
+    border-radius: 50%;
+  }
+}
+
+
+
+// vacancy
+.personVacancy {
+  padding: 20px 30px 15px;
+  flex-basis: calc(100% - 300px);
+}

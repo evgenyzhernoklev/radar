@@ -1,0 +1,56 @@
+.resume {
+
+}
+
+.resume__in {
+  margin: 0 0 20px;
+  padding: 18px 0 0;
+  border-top: 1px solid #E2E2E2;
+}
+
+.resume__title {
+  margin-bottom: 6px;
+  font-size: 18px;
+  font-family: $roboto-black;
+}
+
+.resume__info {
+
+}
+
+.resumeList {
+
+}
+
+.resumeListItem {
+  position: relative;
+  padding-left: 80px;
+}
+
+.resumeListItem__period {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 70px;
+  font-size: 16px;
+  font-family: $roboto-black;
+}
+
+.resumeListInfo {
+
+}
+
+.resumeListInfo__position {
+  font-size: 16px;
+  font-family: $roboto-bold;
+}
+
+.resumeListInfo__place {
+  font-size: 16px;
+}
+
+.resumeListInfo__duties {
+  font-size: 14px;
+  line-height: 18px;
+  color: #5C5C5C;
+}

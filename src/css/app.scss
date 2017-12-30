@@ -23,6 +23,7 @@
 @import "blocks/empty.scss";
 @import "blocks/menu.scss";
 @import "blocks/popups.scss";
+@import "blocks/resume.scss";
 @import "blocks/shadow-triangle.scss";
 @import "blocks/sidebar.scss";
 @import "blocks/tabs.scss";
@@ -32,4 +33,5 @@
 
 // pages
 @import "pages/login.scss";
+@import "pages/person.scss";
 @import "pages/profile.scss";
