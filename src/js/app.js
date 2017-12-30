@@ -19,6 +19,7 @@
 //= ./lib/tooltip.js
 
 //= ./vacancy.js
+//= ./profile.js
 
 //= ./viewer.js
 

@@ -8,9 +8,14 @@
 
 // bio
 .personBio {
+  position: relative;
   flex-basis: 300px;
   padding: 38px 30px 30px;
   border-right: 1px solid #E2E2E2;
+
+  .tooltip {
+    right: -15px;
+  }
 }
 
 .personBio__avatar {
@@ -42,6 +47,46 @@
     background-color: #6CDD57;
     border-radius: 50%;
   }
+}
+
+.personBioInfo {
+  margin: 38px 0 20px;
+}
+
+.personBioInfo__col {
+  &:first-child {
+    .personBioInfo__in {
+      padding-left: 0;
+    }
+  }
+
+  &:last-child {
+    .personBioInfo__in {
+      padding-right: 0;
+      border-right: 0;
+    }
+  }
+}
+
+.personBioInfo__in {
+  padding: 0 20px;
+  border-right: 1px solid #E2E2E2;
+}
+
+.personBioInfo__title {
+  margin-bottom: 8px;
+  font: 12px/16px $roboto-bold;
+  text-transform: uppercase;
+  color: rgba(0,0,0, 0.5);
+}
+
+.personBioInfo__about {
+  font-size: 14px;
+  line-height: 18px;
+}
+
+.personBio__map {
+  margin: 0;
 }
 
 

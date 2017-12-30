@@ -40,12 +40,25 @@
           </div>
         </div>
       </div>
-      <div class="contentIn tabs-container">
+      <div class="contentIn">
         <h1 class="titleMain titleMain--padding">
           <a class="titleMain__link" href="#">Профиль соискателя</a>
         </h1>
         <div class="person colsFlex">
           <div class="personBio">
+            <div class="vacancyActions tooltip-container">
+              <span class="vacancyActions__button icon icon--ellipsis tooltip-link"></span>
+              <div class="tooltip tooltip-content">
+                <div class="triangleShadow triangleShadow--top">
+                  <span class="triangleShadow__helper"></span>
+                </div>
+                <div class="tooltip__in tooltip__in--vacancy">
+                  <div class="tooltipList">
+                    <a class="tooltipList__link" href="#">Пожаловаться</a>
+                  </div>
+                </div>
+              </div>
+            </div>
             <img class="personBio__avatar" src="../../img/avatars/guzhikov.png" />
             <p class="personBio__name">
               Павел Гужиков
@@ -53,11 +66,42 @@
             <p class="personBio__OnlineStatus personBio__OnlineStatus--online">
               Онлайн
             </p>
+            <div class="personBioInfo colsFlex">
+              <div class="colFlex--2 personBioInfo__col">
+                <div class="personBioInfo__in">
+                  <p class="personBioInfo__title">
+                    гражданство
+                  </p>
+                  <p class="personBioInfo__about">
+                    Азербайджан
+                  </p>
+                </div>
+              </div>
+              <div class="colFlex--2 personBioInfo__col">
+                <div class="personBioInfo__in">
+                  <p class="personBioInfo__title">
+                    возраст
+                  </p>
+                  <p class="personBioInfo__about">
+                    29 лет
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="personBio__map vacancyFooter">
+              <p class="vacancyFooter__title">
+                местоположение
+              </p>
+              <p class="vacancyFooter__address">
+                Санкт-Петербург, Купчино
+              </p>
+              <div class="vacancyFooter__map" data-address="Санкт-Петербург, Купчино" id="vacancy-map"></div>
+            </div>
           </div>
           <div class="personVacancy">
             <div class="response">
               <div class="response__title">
-                Откликнуться на вакансию
+                Откликнулся на вакансию
               </div>
               <div class="response__in">
                 <p class="response__position">
@@ -144,7 +188,7 @@
               </div>
               <div class="resume__in">
                 <p class="resume__title">
-                  О образование
+                  Образование
                 </p>
                 <p class="resume__info">
                   Узбекский Государственный Шишкодробильный Институт Металла и Сплавов
@@ -155,6 +199,7 @@
         </div>
       </div>
     </div>
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU"></script>
     <script src="../../js/app.js"></script>
   </body>
 </html>

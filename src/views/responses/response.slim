@@ -45,29 +45,47 @@ html
               | Светлана<br/>Константинопольская
             a.userLogined__exit.icon.icon--logout href="#"
 
-      .contentIn.tabs-container
+      .contentIn
         h1.titleMain.titleMain--padding
           a.titleMain__link href="#" Профиль соискателя
 
         .person.colsFlex
-
           .personBio
+            .vacancyActions.tooltip-container
+              span.vacancyActions__button.icon.icon--ellipsis.tooltip-link
+              .tooltip.tooltip-content
+                .triangleShadow.triangleShadow--top
+                  span.triangleShadow__helper
+                .tooltip__in.tooltip__in--vacancy
+                  .tooltipList
+                    a.tooltipList__link href="#" Пожаловаться
             img.personBio__avatar src="../../img/avatars/guzhikov.png"
             p.personBio__name Павел Гужиков
             p.personBio__OnlineStatus.personBio__OnlineStatus--online Онлайн
+            .personBioInfo.colsFlex
+              .colFlex--2.personBioInfo__col
+                .personBioInfo__in
+                  p.personBioInfo__title гражданство
+                  p.personBioInfo__about Азербайджан
+              .colFlex--2.personBioInfo__col
+                .personBioInfo__in
+                  p.personBioInfo__title возраст
+                  p.personBioInfo__about 29 лет
+            .personBio__map.vacancyFooter
+              p.vacancyFooter__title местоположение
+              p.vacancyFooter__address Санкт-Петербург, Купчино
+              #vacancy-map.vacancyFooter__map data-address="Санкт-Петербург, Купчино"
 
           .personVacancy
             .response
-              .response__title Откликнуться на вакансию
+              .response__title Откликнулся на вакансию
               .response__in
                 p.response__position Официант
                 p.response__info Требуется менеджер по продажам, можно без опыта работы. Оклад + процент. Предпочтение отдается тем, кто сможет оперативно выйти.
                 p.response__address Москва, ул. Митинская 10, к. 1
                 a.response__button.linkButton.linkButton--transparent href="#" Отправить в архив
-
             .responseQuantity
               a.responseQuantity__link href="#" 2 активных отклика
-
             .personButtons.colsFlex
               .colFlex--2
                 .personButtons__in
@@ -100,9 +118,10 @@ html
                 p.resume__title О себе
                 p.resume__info Тактика выстраивания отношений с коммерчеcкими агентами, конечно, откровенна.
               .resume__in
-                p.resume__title О образование
+                p.resume__title Образование
                 p.resume__info Узбекский Государственный Шишкодробильный Институт Металла и Сплавов
 
 
 
+    script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU"
     script src="../../js/app.js"

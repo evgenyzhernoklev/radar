@@ -21,6 +21,9 @@ Viewer.prototype.initClasses = function () {
   $('.empty-block').each(function() {
     new EmptyBlock(this);
   });
+  $('.person').each(function() {
+    new Profile(this);
+  });
   new FormFields();
   new Popups();
   new Vacancies();
