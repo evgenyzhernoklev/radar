@@ -14,6 +14,7 @@
 
 //= ./lib/empty-block.js
 //= ./lib/forms.js
+//= ./lib/plug.js
 //= ./lib/popups.js
 //= ./lib/tabs.js
 //= ./lib/tooltip.js

@@ -26,7 +26,7 @@
         <div class="sidebar__in">
           <span class="sidebar__logo icon icon--logo"></span>
           <nav class="sidebar__menu menu">
-            <a class="menu__link is-active" href="#">Отклики на вакансии<span class="menu__quantity">+1</span></a><a class="menu__link" href="#">Ваши вакансии</a><a class="menu__link" href="#">Диалоги<span class="menu__quantity">+15</span></a><a class="menu__link" href="#">Поиск соискателей</a><a class="menu__link" href="#">Профиль компании</a>
+            <a class="menu__link" href="#">Отклики на вакансии<span class="menu__quantity">+1</span></a><a class="menu__link" href="#">Ваши вакансии</a><a class="menu__link is-active" href="#">Диалоги<span class="menu__quantity">+15</span></a><a class="menu__link" href="#">Поиск соискателей</a><a class="menu__link" href="#">Профиль компании</a>
           </nav>
           <div class="sidebar__add">
             <a class="linkButton linkButton--red" href="#">Добавить вакансию</a>
@@ -40,10 +40,37 @@
           </div>
         </div>
       </div>
-      <div class="contentIn tabs-container">
+      <div class="contentIn">
         <h1 class="titleMain titleMain--padding">
           Диалоги
         </h1>
+        <div class="popup popup--plug popup-plug">
+          <span class="popup__close icon icon--closeThin popup-close"></span>
+          <div class="plug colsFlex">
+            <div class="plug__colInfo">
+              <h2 class="plug__title titleMain">
+                Раздел в разработке
+              </h2>
+              <p class="plug__info">
+                Скачайте бесплатное мобильное приложение для управления откликами и связи с кандидатами.
+              </p>
+              <p class="plug__attention">
+                отправьте себе ссылку на скачивание
+              </p>
+              <form class="plug__form form">
+                <div class="formBlock">
+                  <label class="formLabel"><input class="formLabel__field is-mobile" placeholder="Ваш номер телефона" type="text" /></label><span class="formBlock__error">Неверный номер телефона</span>
+                </div>
+                <div class="formButtons">
+                  <button class="formButtons__button linkButton linkButton--red" type="submit">Отправить ссылку</button>
+                </div>
+              </form>
+            </div>
+            <div class="plug__colImg">
+              <img class="plug__img" src="../../img/phone.png" />
+            </div>
+          </div>
+        </div>
       </div>
     </div>
     <script src="../../js/app.js"></script>

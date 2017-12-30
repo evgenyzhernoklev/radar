@@ -12,6 +12,9 @@ Viewer.prototype.init = function () {
 };
 
 Viewer.prototype.initClasses = function () {
+  if ($('.popup-plug').length) {
+    new Plug();
+  }
   if ($('.tooltip-container').length) {
     new Tooltip();
   }

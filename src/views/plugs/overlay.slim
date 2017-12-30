@@ -28,11 +28,11 @@ html
         .sidebar__in
           span.sidebar__logo.icon.icon--logo
           nav.sidebar__menu.menu
-            a.menu__link.is-active href="#"
+            a.menu__link href="#"
               | Отклики на вакансии
               span.menu__quantity +1
             a.menu__link href="#" Ваши вакансии
-            a.menu__link href="#"
+            a.menu__link.is-active href="#"
               | Диалоги
               span.menu__quantity +15
             a.menu__link href="#" Поиск соискателей
@@ -45,9 +45,25 @@ html
               | Светлана<br/>Константинопольская
             a.userLogined__exit.icon.icon--logout href="#"
 
-      .contentIn.tabs-container
+      .contentIn
         h1.titleMain.titleMain--padding Диалоги
 
+        .popup.popup--plug.popup-plug
+          span.popup__close.icon.icon--closeThin.popup-close
+          .plug.colsFlex
+            .plug__colInfo
+              h2.plug__title.titleMain Раздел в разработке
+              p.plug__info Скачайте бесплатное мобильное приложение для управления откликами и связи с кандидатами.
+              p.plug__attention отправьте себе ссылку на скачивание
+              form.plug__form.form
+                .formBlock
+                  label.formLabel
+                    input.formLabel__field.is-mobile type="text" placeholder="Ваш номер телефона"
+                  span.formBlock__error Неверный номер телефона
+                .formButtons
+                  button.formButtons__button.linkButton.linkButton--red type="submit" Отправить ссылку
+            .plug__colImg
+              img.plug__img src="../../img/phone.png"
 
 
 

@@ -15,9 +15,12 @@
 }
 
 .plug__info {
-  // max-width: 310px;
   margin-bottom: 28px;
   font-size: 16px;
+
+  .popup--plug & {
+    max-width: 310px;
+  }
 }
 
 .plug__attention {
