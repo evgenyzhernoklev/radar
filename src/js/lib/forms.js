@@ -7,6 +7,7 @@ FormFields.prototype.init = function () {
 
   $('.field-image').on('change', this.uploadImage);
   $('.field-avatar').on('change', this.uploadAvatar);
+  $('.field-textarea').on('input propertychange', this.checkLength);
 };
 
 FormFields.prototype.initMasks = function () {
@@ -59,4 +60,15 @@ FormFields.prototype.uploadAvatar = function () {
     $img.attr('src', '');
     $info.text('загрузить фото');
   }
+};
+
+FormFields.prototype.checkLength = function () {
+  var $info = $(this).closest('.formLabel').find('.field-length'),
+      $infoLength = $info.find('.field-length-current'),
+      maxLength = +$(this).attr('maxlength'),
+      fieldLength = $(this).val().length,
+      lengthRemained = maxLength - fieldLength;
+
+  $info.toggleClass('is-full', lengthRemained == 0);
+  $infoLength.text(lengthRemained);
 };

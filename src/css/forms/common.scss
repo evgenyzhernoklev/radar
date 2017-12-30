@@ -84,6 +84,16 @@ textarea.formLabel__field {
   min-height: 120px;
 }
 
+.formLabelLength {
+  margin-top: 6px;
+  font-size: 10px;
+  color: #B0B0B0;
+
+  &.is-full {
+    color: $red;
+  }
+}
+
 
 
 // errors
