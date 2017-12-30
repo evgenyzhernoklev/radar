@@ -13,6 +13,18 @@
   background-color: $red;
 }
 
+.response__title--ok {
+  background-color: $green;
+}
+
+.response__title--error {
+  background-color: $orange;
+}
+
+.response__title--refuse {
+  background-color: #9E9E9E;
+}
+
 .response__in {
   padding: 16px 20px 20px;
 }
