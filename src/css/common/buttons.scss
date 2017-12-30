@@ -45,6 +45,17 @@
   }
 }
 
+.linkButton--transparent {
+  line-height: 48px;
+  color: $black;
+  background-color: $white;
+  border: 1px solid #CFCFCF;
+
+  &:hover {
+    background-color: $white-light;
+  }
+}
+
 .linkButton--send {
   font-size: 12px;
   color: $black;

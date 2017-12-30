@@ -1,0 +1,38 @@
+.response {
+  background-color: $white;
+  box-shadow: 0 2px 10px 0 rgba(0,0,0,0.08);
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.response__title {
+  padding: 9px 20px 8px;
+  font: 12px/16px $roboto-bold;
+  text-transform: uppercase;
+  color: $white;
+  background-color: $red;
+}
+
+.response__in {
+  padding: 16px 20px 20px;
+}
+
+.response__position {
+  margin-bottom: 7px;
+  font: 16px/21px $roboto-bold;
+}
+
+.response__info {
+  margin-bottom: 13px;
+}
+
+.response__address {
+  color: #959595;
+}
+
+.response__button {
+  margin-top: 17px;
+  height: 45px;
+  font-size: 14px;
+  line-height: 43px;
+}

@@ -19,16 +19,16 @@
   flex-basis: 25%;
 }
 
-@media ($tablet) {
-  .colFlex--4 {
-    flex-basis: 50%;
-  }
-}
-
-@media ($mobile) {
-  .colFlex--2,
-  .colFlex--3,
-  .colFlex--4 {
-    flex-basis: 100%;
-  }
-}
+// @media ($tablet) {
+//   .colFlex--4 {
+//     flex-basis: 50%;
+//   }
+// }
+//
+// @media ($mobile) {
+//   .colFlex--2,
+//   .colFlex--3,
+//   .colFlex--4 {
+//     flex-basis: 100%;
+//   }
+// }
