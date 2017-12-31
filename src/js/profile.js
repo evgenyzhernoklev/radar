@@ -27,7 +27,11 @@ Profile.prototype.initMap = function () {
         var coord = res.geoObjects.get(0).geometry.getCoordinates(),
             map = new ymaps.Map(self.mapId, {
               center: coord,
-              zoom: 15
+              zoom: 15,
+              controls: []
+            },
+            {
+              suppressMapOpenBlock: true
             });
 
         map.geoObjects.add(res.geoObjects.get(0));

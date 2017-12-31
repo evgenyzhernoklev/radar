@@ -67,7 +67,11 @@ Vacancies.prototype.initMap = function ($targetVacancy) {
         var coord = res.geoObjects.get(0).geometry.getCoordinates(),
             map = new ymaps.Map(mapId, {
               center: coord,
-              zoom: 15
+              zoom: 15,
+              controls: []
+            },
+            {
+              suppressMapOpenBlock: true
             });
 
         map.geoObjects.add(res.geoObjects.get(0));
