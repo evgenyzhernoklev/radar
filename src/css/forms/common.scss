@@ -122,6 +122,8 @@ textarea.formLabel__field {
   margin-top: 25px;
 
   &.colsFlex {
+    justify-content:space-between;
+
     .colFlex--2 {
       flex-basis: calc(50% - 5px);
     }

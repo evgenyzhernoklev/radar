@@ -28,7 +28,6 @@ html
       .vacancyAdd
         span.vacancyAdd__close.icon.icon--closeThin.vacancy-close
         h3.vacancyAdd__title.titleMain Добавление вакансии
-
         form.form
           .formBlock
             label.formLabel
@@ -44,6 +43,7 @@ html
             label.formLabel
               span.formLabel__info Текст вакансии
               textarea.formLabel__field.field-textarea maxlength="200" placeholder="Например: нужен официант, работа посменная, оплата почасовая, можно без опыта работы."
+                | Требуется официант с навыками бармена, нужен опыт работы, оплата почасовая, договорная. График сутки через трое.
               .formLabelLength.field-length
                 span.formLabelLength__current.field-length-current 200
                 |  из 200 символов
@@ -54,7 +54,7 @@ html
                 span.formSalary__info От
                 .formBlock
                   label.formLabel
-                    input.formLabel__field type="text" placeholder="Введите сумму"
+                    input.formLabel__field type="text" placeholder="Введите сумму" value="20 000"
               .formSalary__sum
                 span.formSalary__info До
                 .formBlock
@@ -65,7 +65,7 @@ html
                   select.formLabel__select.field-select placeholder="За период"
                     option value="" Веберите период
                     option value="1" В неделю
-                    option value="2" В месяц
+                    option value="2" selected="selected" В месяц
                     option value="3" В год
           .formBlock
             label.formLabel
@@ -74,12 +74,15 @@ html
           .formBlock
             label.formLabel
               span.formLabel__info Опыт работы
-              input.formLabel__field type="checkbox"
+              input.formLabel__field type="checkbox" checked="checked"
               p.formLabel__checkInfo
                 | Опыт работы для данной вакансии не требуется
                 span.formLabel__checkIcon
           .formButtons.colsFlex
             button.colFlex--2.formButtons__button.linkButton.linkButton--red type="submit" disabled="disabled" Разместить
+          / .formButtons.colsFlex
+            button.colFlex--2.formButtons__button.linkButton.linkButton--red type="submit" Сохранить
+            button.colFlex--2.formButtons__button.linkButton.linkButton--gray type="reset" Сбросить
 
       .sidebar
         .sidebar__in
