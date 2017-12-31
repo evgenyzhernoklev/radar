@@ -120,6 +120,12 @@ textarea.formLabel__field {
 // buttons
 .formButtons {
   margin-top: 25px;
+
+  &.colsFlex {
+    .colFlex--2 {
+      flex-basis: calc(50% - 5px);
+    }
+  }
 }
 
 .formButtons__button {
