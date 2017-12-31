@@ -1,0 +1,32 @@
+.formSalary {
+
+}
+
+.formSalary__label {
+  display: inline-block;
+  margin-bottom: 9px;
+  font: 14px/22px $roboto-bold;
+}
+
+.formSalary__cols {
+
+}
+
+.formSalary__sum {
+  flex-basis: calc(50% - 67px);
+  position: relative;
+  padding-left: 30px;
+  padding-right: 10px;
+}
+
+.formSalary__info {
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  line-height: 50px;
+}
+
+.formSalary__period {
+  flex-basis: 134px;
+}

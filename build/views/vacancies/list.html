@@ -30,7 +30,7 @@
         </h3>
         <form class="form">
           <div class="formBlock">
-            <label class="formLabel"><span class="formLabel__info">Кого вы ищете?</span><select class="field-select" placeholder="Поиск специализации">
+            <label class="formLabel"><span class="formLabel__info">Кого вы ищете?</span><select class="formLabel__select formLabel__select--loupe field-select" placeholder="Поиск специализации">
                 <option value="">
                   Поиск специализации
                 </option>
@@ -57,6 +57,41 @@
                 <span class="formLabelLength__current field-length-current">200</span> из 200 символов
               </div>
             </label>
+          </div>
+          <div class="formSalary">
+            <div class="formSalary__label">
+              Зарплата
+            </div>
+            <div class="formSalary__cols colsFlex">
+              <div class="formSalary__sum">
+                <span class="formSalary__info">От</span>
+                <div class="formBlock">
+                  <label class="formLabel"><input class="formLabel__field" placeholder="Введите сумму" type="text" /></label>
+                </div>
+              </div>
+              <div class="formSalary__sum">
+                <span class="formSalary__info">До</span>
+                <div class="formBlock">
+                  <label class="formLabel"><input class="formLabel__field" placeholder="Введите сумму" type="text" /></label>
+                </div>
+              </div>
+              <div class="formSalary__period">
+                <label class="formLabel"><select class="formLabel__select field-select" placeholder="За период">
+                    <option value="">
+                      Веберите период
+                    </option>
+                    <option value="1">
+                      В неделю
+                    </option>
+                    <option value="2">
+                      В месяц
+                    </option>
+                    <option value="3">
+                      В год
+                    </option>
+                  </select></label>
+              </div>
+            </div>
           </div>
           <div class="formBlock">
             <label class="formLabel"><span class="formLabel__info">Местоположение</span><input class="formLabel__field" placeholder="Например: Москва, ул. Тверская, д. 6" type="text" /></label>

@@ -30,19 +30,16 @@ html
         h3.vacancyAdd__title.titleMain Добавление вакансии
 
         form.form
-
           .formBlock
             label.formLabel
               span.formLabel__info Кого вы ищете?
-              / .fieldWrapper__select
-              select.field-select placeholder="Поиск специализации"
+              select.formLabel__select.formLabel__select--loupe.field-select placeholder="Поиск специализации"
                 option value="" Поиск специализации
                 option value="1" Актер
                 option value="2" Грузчик
                 option value="3" Медсестра
                 option value="4" Няня
                 option value="5" Юрист
-
           .formBlock
             label.formLabel
               span.formLabel__info Текст вакансии
@@ -50,6 +47,28 @@ html
               .formLabelLength.field-length
                 span.formLabelLength__current.field-length-current 200
                 |  из 200 символов
+
+          .formSalary
+            .formSalary__label Зарплата
+            .formSalary__cols.colsFlex
+              .formSalary__sum
+                span.formSalary__info От
+                .formBlock
+                  label.formLabel
+                    input.formLabel__field type="text" placeholder="Введите сумму"
+              .formSalary__sum
+                span.formSalary__info До
+                .formBlock
+                  label.formLabel
+                    input.formLabel__field type="text" placeholder="Введите сумму"
+              .formSalary__period
+                label.formLabel
+                  select.formLabel__select.field-select placeholder="За период"
+                    option value="" Веберите период
+                    option value="1" В неделю
+                    option value="2" В месяц
+                    option value="3" В год
+
           .formBlock
             label.formLabel
               span.formLabel__info Местоположение
