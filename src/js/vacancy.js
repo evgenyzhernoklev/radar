@@ -1,4 +1,5 @@
 var Vacancies = function () {
+  this.body = $('body');
   this.showLink = $('.vacancy-show');
   this.hideLink = $('.vacancy-close');
   this.addVacancyLink = $('.vacancy-add');
@@ -24,6 +25,7 @@ Vacancies.prototype.showVacancy = function (e) {
   e.preventDefault();
   var $targetVacancy = $(e.target).closest('.vacancy-show').find('.vacancy-info');
 
+  this.body.addClass('is-opened');
   $targetVacancy.addClass('is-active');
   this.bodyOverlay.addClass('is-active');
   this.initMap($targetVacancy);
@@ -31,8 +33,11 @@ Vacancies.prototype.showVacancy = function (e) {
 
 Vacancies.prototype.hideVacancy = function (e) {
   e.preventDefault();
+
+  this.body.removeClass('is-opened');
   this.bodyOverlay.removeClass('is-active');
   this.vacanciesInfo.removeClass('is-active');
+  this.addVacancyContainer.removeClass('is-active');
   this.vacancyMap.attr('id', '');
 };
 
@@ -76,6 +81,7 @@ Vacancies.prototype.initMap = function ($targetVacancy) {
 Vacancies.prototype.addVacancy = function (e) {
   e.preventDefault();
 
+  this.body.addClass('is-opened');
   this.bodyOverlay.addClass('is-active');
   this.addVacancyContainer.addClass('is-active');
 };
