@@ -5,6 +5,7 @@
 @import "additional/mixins.scss";
 
 // vendor
+@import "vendor/selectize.scss";
 
 // common
 @import "common/common.scss";
@@ -16,6 +17,7 @@
 @import "forms/common.scss";
 @import "forms/checkbox.scss";
 @import "forms/image-upload.scss";
+@import "forms/select.scss";
 
 // blocks
 @import "blocks/cols-flex.scss";

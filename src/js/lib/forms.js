@@ -4,6 +4,7 @@ var FormFields = function () {
 
 FormFields.prototype.init = function () {
   this.initMasks();
+  this.initSelect();
 
   $('.field-image').on('change', this.uploadImage);
   $('.field-avatar').on('change', this.uploadAvatar);
@@ -16,6 +17,15 @@ FormFields.prototype.initMasks = function () {
   });
 
   $('.is-mobile').inputmask({"mask": "+7 (999) 999-9999", clearIncomplete: true });
+};
+
+FormFields.prototype.initSelect = function () {
+  $('.field-select').each(function() {
+    $(this).selectize({
+      create: false,
+      dropdownParent: 'body'
+    });
+  });
 };
 
 FormFields.prototype.uploadImage = function () {

@@ -5,6 +5,7 @@
 //= ../../node_modules/jquery/dist/jquery.min.js
 //= ./vendor/bpopup.min.js
 //= ./vendor/jquery.inputmask.bundle.js
+//= ./vendor/selectize.min.js
 
 
 
