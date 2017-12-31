@@ -32,9 +32,15 @@ Profile.prototype.initMap = function () {
             },
             {
               suppressMapOpenBlock: true
+            }),
+            myPlacemark = new ymaps.Placemark(coord, {}, {
+              iconLayout: 'default#image',
+              iconImageHref: '../../img/icons/svg/mark.svg',
+              iconImageSize: [14, 32],
+              iconImageOffset: [-7, -30]
             });
 
-        map.geoObjects.add(res.geoObjects.get(0));
+        map.geoObjects.add(myPlacemark);
       }
     );
   }
