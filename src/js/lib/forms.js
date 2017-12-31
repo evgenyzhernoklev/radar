@@ -8,7 +8,9 @@ FormFields.prototype.init = function () {
 
   $('.field-image').on('change', this.uploadImage);
   $('.field-avatar').on('change', this.uploadAvatar);
-  $('.field-textarea').on('input propertychange', this.checkLength);
+  $('.field-textarea').on('input', this.checkLength);
+
+  $('.field-textarea').trigger('input');
 };
 
 FormFields.prototype.initMasks = function () {
