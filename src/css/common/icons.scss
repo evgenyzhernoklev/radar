@@ -61,3 +61,7 @@
 .icon--photocamera {
   @include background-image(photocamera, 36px, 32px);
 }
+
+.icon--chat {
+  @include background-image(chat, 70px, 70px);
+}

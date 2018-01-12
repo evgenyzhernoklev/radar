@@ -22,7 +22,8 @@ Viewer.prototype.initClasses = function () {
     new Tabs(this);
   });
   $('.empty-block').each(function() {
-    new EmptyBlock(this);
+    var indent = $(this).data('indent');
+    new EmptyBlock(this, indent);
   });
   $('.person').each(function() {
     new Profile(this);

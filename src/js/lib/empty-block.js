@@ -1,17 +1,18 @@
-var EmptyBlock = function(container) {
+var EmptyBlock = function(container, indent) {
+  this.window = $(window);
   this.container = $(container);
+  this.INDENT = indent || 0;
   this.init();
 };
 
 EmptyBlock.prototype.init = function () {
   this.updateHeight();
-  $(window).on('resize', this.updateHeight.bind(this));
+  this.window.on('resize', this.updateHeight.bind(this));
 };
 
 EmptyBlock.prototype.updateHeight = function () {
-  var windowHeight = $(window).height(),
-      offsetTop = this.container.offset().top,
-      height = windowHeight - offsetTop;
+  var elementPositionTop = this.container.offset().top,
+      newHeight = this.window.height() - elementPositionTop - this.INDENT;
 
-  this.container.height(height);
+  this.container.height(newHeight);
 };
